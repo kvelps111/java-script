@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="teksts">teksts</label>
+    <input type="text" name="teksts" id="teksts" />
+    <button id="mybtn" type="submit">Pabeigt</button>
+    <!-- java scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const myBtn = document.getElementById("mybtn");
+        myBtn.addEventListener("click", printname);
+
+        function printname() {
+          console.log(teksts);
+        }
+      });
+    </script>
+    <!-- java scripts prieks print name 
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        const myBtn = document.getElementById("mybtn");
+        myBtn.addEventListener("click", printname);
+
+        function printname() {
+          console.log("KRV!");
+        }
+      });
+     
+     -->
+  </body>
+</html>
